@@ -265,5 +265,48 @@
       </div>
     </section>
   </div>
+  <script>
+(function () {
+  const STORE_BASE = "https://prodesksim.com";
+
+  function fixJudgeMeLinks() {
+    // Only touch links inside the Judge.me widget
+    const widget = document.querySelector(".jdgm-widget, .jdgm-all-reviews-widget");
+    if (!widget) return;
+
+    const links = widget.querySelectorAll("a[href]");
+    links.forEach(a => {
+      const href = a.getAttribute("href");
+      if (!href) return;
+
+      // If link is a relative product path, move it to the real store domain
+      if (href.startsWith("/products/") || href.startsWith("/collections/") || href.startsWith("/pages/")) {
+        a.setAttribute("href", STORE_BASE + href);
+        a.setAttribute("target", "_blank");
+        a.setAttribute("rel", "nofollow noopener");
+      }
+
+      // Some widgets may output full Shopify domain links — convert them to prodesksim.com
+      if (href.includes("prodesksim.myshopify.com")) {
+        const url = new URL(href);
+        a.setAttribute("href", STORE_BASE + url.pathname + url.search + url.hash);
+        a.setAttribute("target", "_blank");
+        a.setAttribute("rel", "nofollow noopener");
+      }
+    });
+  }
+
+  // Run now
+  fixJudgeMeLinks();
+
+  // Run again after Judge.me loads content asynchronously
+  const mo = new MutationObserver(() => fixJudgeMeLinks());
+  mo.observe(document.documentElement, { childList: true, subtree: true });
+
+  // Also run shortly after load (extra safety)
+  window.addEventListener("load", () => setTimeout(fixJudgeMeLinks, 800));
+})();
+</script>
+
 </body>
 </html>
