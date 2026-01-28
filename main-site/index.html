@@ -4,24 +4,24 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>ProDeskSim Reviews Portal | Honest Feedback, Compatibility & Support</title>
-  <meta name="description" content="A ProDeskSim reviews portal focused on honest feedback, compatibility notes, and support experiences for flight simulator hardware and accessories." />
-  <meta name="keywords" content="prodesksim-reviews.review, ProDeskSim review portal, honest ProDeskSim reviews, ProDeskSim compatibility, ProDeskSim support, flight sim gear reviews, cockpit hardware reviews" />
-  <meta name="robots" content="index,follow,max-image-preview:large" />
+  <title>ProDeskSim Reviews Portal | Honest Customer Feedback</title>
+  <meta name="description" content="Read honest ProDeskSim reviews from verified customers. See real feedback for flight simulator hardware, Honeycomb Bravo add-ons, and cockpit panels." />
+  <meta name="keywords" content="ProDeskSim reviews, prodesksim-reviews.review, ProDeskSim customer feedback, flight simulator hardware reviews, Honeycomb Bravo reviews" />
+  <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://prodesksim-reviews.review/" />
 
+  <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="ProDeskSim Reviews Portal" />
-  <meta property="og:description" content="Honest feedback, compatibility notes, and support experiences for ProDeskSim." />
+  <meta property="og:description" content="Real customer reviews for ProDeskSim flight simulator hardware." />
   <meta property="og:url" content="https://prodesksim-reviews.review/" />
 
+  <!-- Twitter -->
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="ProDeskSim Reviews Portal" />
-  <meta name="twitter:description" content="Honest feedback and compatibility notes for ProDeskSim products." />
 
-  <!-- Judge.me Integration -->
+  <!-- Judge.me Integration (REQUIRED) -->
   <script>
-    jdgm = window.jdgm || {};
+    window.jdgm = window.jdgm || {};
     jdgm.SHOP_DOMAIN = 'prodesksim.myshopify.com';
     jdgm.PLATFORM = 'shopify';
     jdgm.PUBLIC_TOKEN = 'yflF_2NLHirH6tkgvQdjsCXseJ0';
@@ -30,16 +30,17 @@
 
   <style>
     :root{
-      --bg:#081a2e;          /* Dark navy background */
-      --panel:#0e2742;       /* Panels / cards */
+      --bg:#081a2e;
+      --panel:#0e2742;
       --text:#f2f6fb;
       --muted:#b9c7d6;
-
-      --accent:#3aa0ff;      /* Aviation blue */
-      --accent2:#00c2a8;     /* Teal accent */
+      --accent:#3aa0ff;
+      --accent2:#00c2a8;
       --border: rgba(255,255,255,.14);
     }
+
     *{box-sizing:border-box}
+
     body{
       margin:0;
       background:
@@ -48,59 +49,126 @@
         var(--bg);
       color:var(--text);
       font-family: "Trebuchet MS", Verdana, Arial, sans-serif;
-      line-height:1.55;
+      line-height:1.6;
     }
-    .wrap{max-width:980px; margin:0 auto; padding:46px 16px 72px;}
+
+    .wrap{max-width:1000px; margin:0 auto; padding:48px 16px 80px;}
+
     .hero{
+      background:linear-gradient(180deg, rgba(14,39,66,.95), rgba(14,39,66,.75));
+      border:1px solid var(--border);
+      border-radius:22px;
+      padding:26px;
+    }
+
+    .top{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      flex-wrap:wrap;
+      gap:14px;
+    }
+
+    .logo{
+      font-weight:900;
+      font-size:18px;
+      letter-spacing:.3px;
+    }
+
+    .badge{
+      font-size:12px;
+      padding:6px 12px;
+      border-radius:999px;
+      border:1px solid var(--border);
+      color:var(--muted);
+    }
+
+    .cta{
+      background:linear-gradient(135deg, var(--accent), var(--accent2));
+      color:#05131f;
+      font-weight:900;
+      padding:10px 18px;
+      border-radius:14px;
+      text-decoration:none;
+      white-space:nowrap;
+    }
+
+    h1{
+      margin:18px 0 8px;
+      font-size:36px;
+    }
+
+    .lead{
+      color:var(--muted);
+      max-width:820px;
+      margin-bottom:26px;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns:1fr;
+      gap:18px;
+    }
+
+    @media (min-width: 900px){
+      .grid{grid-template-columns:1.3fr .7fr;}
+    }
+
+    .card{
+      background:rgba(14,39,66,.8);
       border:1px solid var(--border);
       border-radius:20px;
       padding:20px;
-      background:linear-gradient(180deg, rgba(14,39,66,.92), rgba(14,39,66,.65));
     }
-    .row{display:flex; gap:12px; align-items:center; justify-content:space-between; flex-wrap:wrap;}
-    .logo{font-weight:900; letter-spacing:.5px;}
-    .chip{border:1px solid var(--border); padding:6px 10px; border-radius:999px; color:var(--muted); font-size:12px;}
-    .cta{
-      display:inline-block; padding:10px 14px; border-radius:14px;
-      background:linear-gradient(135deg, var(--accent), var(--accent2));
-      color:#06121e; font-weight:900; text-decoration:none;
-    }
-    h1{margin:14px 0 6px; font-size:36px; line-height:1.12;}
-    .lead{color:var(--muted); max-width:78ch; margin:0;}
-    .grid{display:grid; grid-template-columns: 1fr; gap:14px; margin-top:16px;}
-    @media (min-width: 921px){
-      .grid{grid-template-columns: 1fr 1fr;}
-    }
-    .card{
-      border:1px solid var(--border);
-      border-radius:18px;
-      background:rgba(14,39,66,.72);
-      padding:16px;
-    }
-    .card h2{margin:0 0 10px; font-size:16px}
+
     .pill{
-      display:inline-block; font-size:12px; padding:4px 10px; border-radius:999px;
-      background:rgba(255,255,255,.08); color:var(--muted); border:1px solid var(--border);
+      display:inline-block;
+      font-size:12px;
+      padding:5px 12px;
+      border-radius:999px;
+      border:1px solid var(--border);
+      color:var(--muted);
       margin-bottom:10px;
     }
-    .small{color:var(--muted); font-size:13px}
-    a{color:var(--accent)}
-    /* Light touch styling for Judge.me embed */
-    .jdgm-widget, .jdgm-rev-widg{
-      color: var(--text);
+
+    h2{
+      margin:6px 0 14px;
+      font-size:18px;
     }
-    .jdgm-rev-widg__title, .jdgm-all-reviews-widget__title{
-      color: var(--text) !important;
+
+    .small{
+      font-size:13px;
+      color:var(--muted);
+    }
+
+    a{color:var(--accent)}
+
+    /* Judge.me styling safety */
+    .jdgm-widget,
+    .jdgm-all-reviews-widget{
+      background:transparent !important;
+      color:var(--text) !important;
+    }
+
+    .jdgm-rev,
+    .jdgm-rev__body,
+    .jdgm-rev__content{
+      color:var(--text) !important;
     }
   </style>
 
+  <!-- Structured Data -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
     "@type":"WebSite",
-    "name":"ProDeskSim Reviews Portal",
+    "name":"ProDeskSim Reviews",
     "url":"https://prodesksim-reviews.review/",
-    "isFamilyFriendly": true
+    "about":{
+      "@type":"Organization",
+      "name":"ProDeskSim",
+      "url":"https://prodesksim.com/"
+    }
   }
   </script>
 </head>
@@ -108,53 +176,49 @@
 <body>
   <div class="wrap">
     <section class="hero">
-      <div class="row">
+
+      <div class="top">
         <div class="logo">⭐ ProDeskSim Reviews Portal</div>
-        <div class="chip">Reviews • Compatibility • Support</div>
+        <div class="badge">Reviews • Compatibility • Support</div>
         <a class="cta" href="https://prodesksim.com/" rel="nofollow">Go to Official Store</a>
       </div>
 
       <h1>Honest ProDeskSim Reviews</h1>
       <p class="lead">
-        A fast review portal for ProDeskSim flight simulator hardware — built for quick trust checks,
-        compatibility notes, and real customer experiences pulled directly from Shopify.
+        Verified customer feedback for ProDeskSim flight simulator hardware.
+        Reviews below are pulled live from the official Shopify store via Judge.me.
       </p>
 
       <div class="grid">
+
+        <!-- LIVE REVIEWS -->
         <div class="card">
-          <div class="pill">Verified</div>
+          <span class="pill">Verified Reviews</span>
           <h2>Customer Reviews (Live)</h2>
 
-          <!-- Judge.me Reviews Widget (All Reviews) -->
+          <!-- THIS IS THE FIX -->
           <div class="jdgm-widget jdgm-all-reviews-widget">
-            <div class="jdgm-rev-widg" data-number-of-reviews="6"></div>
+            <div class="jdgm-all-reviews__body"></div>
           </div>
 
-          <p class="small" style="margin-top:10px;">
-            These reviews are loaded from your official Shopify store via Judge.me.
+          <p class="small" style="margin-top:12px;">
+            Reviews shown are submitted by verified ProDeskSim customers.
           </p>
         </div>
 
+        <!-- LINKS -->
         <div class="card">
-          <div class="pill">Quick Links</div>
-          <h2>Helpful Resources</h2>
-          <ul class="small" style="margin:0; padding-left:18px;">
+          <span class="pill">Resources</span>
+          <h2>Helpful Links</h2>
+          <ul class="small">
             <li><a href="https://prodesksim.com/" rel="nofollow">ProDeskSim Official Store</a></li>
             <li><a href="https://prodesksim.com/pages/installation-guides" rel="nofollow">Installation Guides</a></li>
-            <li><a href="https://prodesksim.com/collections/honeycomb-bravo-boeing-family" rel="nofollow">Boeing Family (Bravo Add-ons)</a></li>
-            <li><a href="https://prodesksim.com/collections/airbus-family" rel="nofollow">Airbus Family (Bravo Add-ons)</a></li>
+            <li><a href="https://prodesksim.com/collections/honeycomb-bravo-boeing-family" rel="nofollow">Boeing Family (Bravo)</a></li>
+            <li><a href="https://prodesksim.com/collections/airbus-family" rel="nofollow">Airbus Family (Bravo)</a></li>
           </ul>
-
-          <p class="small" style="margin-top:12px;">
-            Tip: You can add more sections later (MSFS vs X-Plane, specific product collections, etc.).
-          </p>
         </div>
-      </div>
 
-      <p class="small" style="margin-top:14px">
-        Official installation guides:
-        <a href="https://prodesksim.com/pages/installation-guides" rel="nofollow">ProDeskSim Installation Guides</a>
-      </p>
+      </div>
     </section>
   </div>
 </body>
