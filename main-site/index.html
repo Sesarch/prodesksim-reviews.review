@@ -155,6 +155,50 @@
     .jdgm-rev__content{
       color:var(--text) !important;
     }
+    /* ===== Judge.me CTA Button Styling ===== */
+
+/* Move button to its own row */
+.jdgm-all-reviews-widget .jdgm-write-rev-link,
+.jdgm-all-reviews-widget .jdgm-write-rev-link-btn {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  margin: 18px auto 6px auto !important;
+  float: none !important;
+  clear: both !important;
+}
+
+/* Button design */
+.jdgm-write-rev-link,
+.jdgm-write-rev-link-btn,
+.jdgm-all-reviews-widget .jdgm-write-rev-link {
+  background: linear-gradient(135deg, #3aa0ff, #00c2a8) !important;
+  color: #05131f !important;
+  padding: 12px 22px !important;
+  border-radius: 14px !important;
+  font-weight: 800 !important;
+  font-size: 14px !important;
+  text-decoration: none !important;
+  border: none !important;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.35);
+  transition: all 0.25s ease;
+}
+
+/* Hover effect */
+.jdgm-write-rev-link:hover,
+.jdgm-write-rev-link-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.45);
+  opacity: 0.95;
+}
+
+/* Ensure it is centered */
+.jdgm-write-rev-link-wrapper,
+.jdgm-write-rev-link-container {
+  text-align: center !important;
+  width: 100%;
+}
+
   </style>
 
   <!-- Structured Data -->
